@@ -1,6 +1,6 @@
 # Личный проект «Девайс»
 
-* Студент: [Антон Скоробогатько](https://up.htmlacademy.ru/htmlcss/29/user/1489969).
+* Студент: [Антон Павлович Скоробогатько](https://up.htmlacademy.ru/htmlcss/29/user/1489969).
 * Наставник: [Натали Белоева](https://htmlacademy.ru/profile/id1123699).
 
 ---
