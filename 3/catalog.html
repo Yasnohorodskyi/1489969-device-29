@@ -64,84 +64,77 @@
                 </li>
             </ul>
         </div>
-
         <div>
             <h2>Фильтр:</h2>
-
-            <div>
-                <h2>сортировка:</h2>
+            <form>
+                <fieldset class="filter-group">
+                    <legend>Стоимость</legend>
+                    <div>
+                        <label class="price-label" for="filter-min-price">от</label>
+                        <input class="price-value" type="text" name="min-price" id="filter-min-price" value="0">
+                        <label class="price-label" for="filter-max-price">до</label>
+                        <input class="price-value" type="text" name="max-price" id="filter-max-price" value="5000">
+                    </div>
+                    </fieldset>
+                    </form>
+            <fieldset>
+                <legend>Цвет</legend>
                 <ul>
                     <li>
-                        <a href="#">По цене</a>
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
+                        <label>Черный</label>
                     </li>
                     <li>
-                        <a href="#">По типу</a>
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white">
+                        <label>Белый</label>
                     </li>
                     <li>
-                        <a href="#">По популярности</a>
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
+                        <label>Синий</label>
+                    </li>
+                    <li>
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
+                        <label>Красный</label>
+                    </li>
+                    <li>
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
+                        <label>Розовый</label>
                     </li>
                 </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Bluetooth</legend>
                 <ul>
-                    <li><a href="#">по возрастанию</a></li>
-                    <li><a href="#">по убыванию</a></li>
+                    <li>
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
+                        <label>Есть</label>
+                    </li>
+                    <li>
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="bluetooth-no">
+                        <label>Нет</label>
+                    </li>
                 </ul>
-
-
-
-                <form>
-                    <fieldset class="filter-group">
-                        <legend>Стоимость</legend>
-                        <div>
-                            <label>от</label>
-                            <input class="price-value" type="text" name="min-price" id="filter-min-price" value="0">
-                            <label class="price-label" for="filter-max-price">до</label>
-                            <input class="price-value" type="text" name="max-price" id="filter-max-price" value="5000">
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Цвет</legend>
-                        <ul>
-                            <li>
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
-                                <label>Черный</label>
-                            </li>
-                            <li>
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white">
-                                <label>Белый</label>
-                            </li>
-                            <li>
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
-                                <label>Синий</label>
-                            </li>
-                            <li>
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
-                                <label>Красный</label>
-                            </li>
-                            <li>
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
-                                <label>Розовый</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Bluetooth</legend>
-                        <ul>
-                            <li>
-                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
-                                <label>Есть</label>
-                            </li>
-                            <li>
-                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="bluetooth-no">
-                                <label>Нет</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <button>Показать</button>
-
-                </form>
-            </div>
+            </fieldset>
+            <button>Показать</button>
+        </div>
+        <div>
+            <h2>сортировка:</h2>
+            <ul>
+                <li>
+                    <a href="#">По цене</a>
+                </li>
+                <li>
+                    <a href="#">По типу</a>
+                </li>
+                <li>
+                    <a href="#">По популярности</a>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="#">по возрастанию</a></li>
+                <li><a href="#">по убыванию</a></li>
+            </ul>
             <section>
-
                 <h2>Товары</h2>
                 <ul>
                     <li>
@@ -240,10 +233,7 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
         </div>
-        <div>
-            <span class="footer-phone">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></span>
-        </div>
-
+        <p><a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
         <ul>
             <li>
                 <div>
