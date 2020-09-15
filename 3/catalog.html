@@ -64,10 +64,10 @@
                 </li>
             </ul>
         </div>
+
         <div>
-            <div>
-                <h2>Фильтр:</h2>
-            </div>
+            <h2>Фильтр:</h2>
+
             <div>
                 <h2>сортировка:</h2>
                 <ul>
@@ -85,60 +85,63 @@
                     <li><a href="#">по возрастанию</a></li>
                     <li><a href="#">по убыванию</a></li>
                 </ul>
+
+
+
+                <form>
+                    <fieldset class="filter-group">
+                        <legend>Стоимость</legend>
+                        <div>
+                            <label>от</label>
+                            <input class="price-value" type="text" name="min-price" id="filter-min-price" value="0">
+                            <label class="price-label" for="filter-max-price">до</label>
+                            <input class="price-value" type="text" name="max-price" id="filter-max-price" value="5000">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Цвет</legend>
+                        <ul>
+                            <li>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
+                                <label>Черный</label>
+                            </li>
+                            <li>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white">
+                                <label>Белый</label>
+                            </li>
+                            <li>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
+                                <label>Синий</label>
+                            </li>
+                            <li>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
+                                <label>Красный</label>
+                            </li>
+                            <li>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
+                                <label>Розовый</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Bluetooth</legend>
+                        <ul>
+                            <li>
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
+                                <label>Есть</label>
+                            </li>
+                            <li>
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="bluetooth-no">
+                                <label>Нет</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button>Показать</button>
+
+                </form>
             </div>
-        </div>
-        <div>
-            <form>
-                <fieldset class="filter-group">
-                    <legend>Стоимость</legend>
-                    <div>
-                        <label>от</label>
-                        <input class="price-value" type="text" name="min-price" id="filter-min-price" value="0">
-                        <label class="price-label" for="filter-max-price">до</label>
-                        <input class="price-value" type="text" name="max-price" id="filter-max-price" value="5000">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Цвет</legend>
-                    <ul>
-                        <li>
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
-                            <label>Черный</label>
-                        </li>
-                        <li>
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white">
-                            <label>Белый</label>
-                        </li>
-                        <li>
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
-                            <label>Синий</label>
-                        </li>
-                        <li>
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
-                            <label>Красный</label>
-                        </li>
-                        <li>
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
-                            <label>Розовый</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset>
-                    <legend>Bluetooth</legend>
-                    <ul>
-                        <li>
-                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
-                            <label>Есть</label>
-                        </li>
-                        <li>
-                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="bluetooth-no">
-                            <label>Нет</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <button>Показать</button>
-            </form>
             <section>
+
                 <h2>Товары</h2>
                 <ul>
                     <li>
@@ -223,17 +226,13 @@
         <div>
             <a href="index.html">device</a>
         </div>
-        <div>
-            <ul>
-                <li><a href="#">Валентин Петухов</a></li>
-                <li><a href="#">Выйти</a></li>
-                <li><a href="#">Сравнить</a></li>
-                <li><a href="#">Корзина</a></li>
-            </ul>
-        </div>
-        <div>
-            <p>г. Москва, ул. Строителей, 15</p>
-        </div>
+        <ul>
+            <li><a href="#">Валентин Петухов</a></li>
+            <li><a href="#">Выйти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+        </ul>
+        <p>г. Москва, ул. Строителей, 15</p>
         <div>
             <ul>
                 <li><a href="#">Доставка</a></li>
@@ -242,31 +241,35 @@
             </ul>
         </div>
         <div>
-            <p>Тел.: +7 (495) 495-95-95</p>
+            <span class="footer-phone">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></span>
         </div>
-        <div>
-            <ul>
-                <li>
+
+        <ul>
+            <li>
+                <div>
                     <a href="#">
                         <span>facebook</span>
-                        <img src="img/fb.svg" width="32" height="32" alt="facebook">
                     </a>
-                </li>
-                <li>
+                </div>
+            </li>
+            <li>
+                <div>
                     <a href="#">
                         <span>instagram</span>
-                        <img src="img/instagram.svg" width="32" height="32" alt="instagram">
                     </a>
-                </li>
-                <li>
+                </div>
+            </li>
+            <li>
+                <div>
                     <a href="#">
                         <span>twitter</span>
-                        <img src="img/twitter.svg" width="32" height="32" alt="twitter">
                     </a>
-                </li>
-            </ul>
+                </div>
+            </li>
+        </ul>
+        <div>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-academy-logo" title="Интенсивный онлайн-курс «HTML и CSS, уровень 1» — HTML Academy"><img src="img/logo-html.svg" width="27" height="34" alt="лого академии"></a>
         </div>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-academy-logo" title="Интенсивный онлайн-курс «HTML и CSS, уровень 1» — HTML Academy"><img src="img/logo-html.svg" width="27" height="34" alt="лого академии"></a>
     </footer>
     <section>
         <h2>Форма обратной связи</h2>
