@@ -4,14 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="page-header">
+    <header class="page-header">
+        <div class="container">
             <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
             <div class="page-header__logo">
                 <a><img src="img/black-logo-device.svg" alt="DEVICE" width="164" height="36"></a>
@@ -68,79 +66,102 @@
                     </li>
                 </ul>
             </nav>
-        </header>
-    </div>
-
+        </div>
+    </header>
     <main class="page-content">
         <div class="container">
             <section class="promo-slider">
                 <h2 class="visually-hidden">Промо-слайдер</h2>
-                <input class="promo-slider__input  visually-hidden" id="promo-control-1" type="radio" name="promo-control" checked>
-                <input class="promo-slider__input  visually-hidden" id="promo-control-2" type="radio" name="promo-control">
-                <input class="promo-slider__input  visually-hidden" id="promo-control-3" type="radio" name="promo-control">
-
                 <div class="promo-slider__item  promo-slider__item--1">
                     <div class="promo-slider__img-wrap  promo-slider__img-wrap--01">
-                        <img src="img/promo-slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486">
+                        <img src="img/slider-1 1.png" alt="Самая длинная палка для селфи" width="384" height="486">
                     </div>
                     <div class="promo-slider__descr-wrap  promo-slider__descr-wrap--1">
                         <b>Делай селфи,<br>как Бен Стиллер!</b>
                         <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                         <a class="btn" href="#">Подробнее</a>
                         <div class="promo-slider__advantages  promo-slider__advantages--1">
-                            <div class="promo-slider__advantages-col  promo-slider__advantages-col--first">8,5 м</div>
-                            <div class="promo-slider__advantages-col  promo-slider__advantages-col--second">5 кг</div>
-                            <div class="promo-slider__advantages-col  promo-slider__advantages-col--third">Карбон</div>
-                            <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--first">Длина палки</div>
-                            <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--second">Вес палки</div>
-                            <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--third">Материал</div>
+                            <tr>
+                                <th>
+                                    <div class="promo-slider__advantages-col  promo-slider__advantages-col--first">8,5 м</div>
+                                </th>
+                                <th>
+                                    <div class="promo-slider__advantages-col  promo-slider__advantages-col--second">5 кг</div>
+                                </th>
+                                <th>
+                                    <div class="promo-slider__advantages-col  promo-slider__advantages-col--third">Карбон</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--first">Длина палки</div>
+                                </th>
+                                <th>
+                                    <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--second">Вес палки</div>
+                                </th>
+                                <th>
+                                    <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--third">Материал</div>
+                                </th>
+                            </tr>
                         </div>
                     </div>
                 </div>
                 <div class="promo-slider__item  promo-slider__item--2">
                     <div class="promo-slider__img-wrap  promo-slider__img-wrap--02">
-                        <img src="img/promo-slider-2.png" alt="Фитнес-браслет" width="345" height="485">
+                        <img src="img/slider-2 1.png" alt="Фитнес-браслет" width="345" height="485">
                     </div>
                     <div class="promo-slider__descr-wrap  promo-slider__descr-wrap--2">
                         <b>Худеем<br>правильно!</b>
                         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                         <a class="btn" href="#">Подробнее</a>
                         <div class="promo-slider__advantages  promo-slider__advantages--2">
-                            <div class="promo-slider__advantages-col  promo-slider__advantages-col--first">48 часов</div>
-                            <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--first">Без подзарядки</div>
+                            <tr>
+                                <th>
+                                    <div class="promo-slider__advantages-col  promo-slider__advantages-col--first">48 часов</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--first">Без подзарядки</div>
+                                </th>
+                            </tr>
                         </div>
                     </div>
                 </div>
                 <div class="promo-slider__item  promo-slider__item--3">
                     <div class="promo-slider__img-wrap  promo-slider__img-wrap--03">
-                        <img src="img/promo-slider-3.png" alt="Квадрокоптер" width="526" height="334">
+                        <img src="img/slider-3 1-1.png" alt="Квадрокоптер" width="526" height="334">
                     </div>
                     <div class="promo-slider__descr-wrap  promo-slider__descr-wrap--3">
                         <b>Порхает как бабочка, жалит как пчела!</b>
                         <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                         <a class="btn" href="#">Подробнее</a>
                         <div class="promo-slider__advantages  promo-slider__advantages--3">
-                            <div class="promo-slider__advantages-col  promo-slider__advantages-col--first">800 м</div>
-                            <div class="promo-slider__advantages-col  promo-slider__advantages-col--second">50 м</div>
-                            <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--first">Дальность полета</div>
-                            <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--second">Радиус поражения</div>
+                            <tr>
+                                <th>
+                                    <div class="promo-slider__advantages-col  promo-slider__advantages-col--first">800 м</div>
+                                </th>
+                                <th>
+                                    <div class="promo-slider__advantages-col  promo-slider__advantages-col--second">50 м</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--first">Дальность полета</div>
+                                </th>
+                                <th>
+                                    <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--second">Радиус поражения</div>
+                                </th>
+                            </tr>
                         </div>
                     </div>
                 </div>
-
-                <div class="promo-slider__controls">
-                    <label class="promo-slider__control" for="promo-control-1">
-                        <span class="visually-hidden">Первый слайд</span>
-                    </label>
-                    <label class="promo-slider__control" for="promo-control-2">
-                        <span class="visually-hidden">Второй слайд</span>
-                    </label>
-                    <label class="promo-slider__control" for="promo-control-3">
-                        <span class="visually-hidden">Третий слайд</span>
-                    </label>
+                <div class="slider-controls">
+                    <button type="button">Первый слайд</button>
+                    <button type="button">Второй слайд</button>
+                    <button type="button">Третий слайд</button>
                 </div>
             </section>
-
             <section class="main-goods">
                 <h2 class="visually-hidden">Популярные товары</h2>
                 <ul class="main-goods__list">
@@ -195,15 +216,10 @@
                 </ul>
             </section>
         </div>
-
         <section class="services-slider">
             <div class="container">
                 <div class="services-slider-wrap">
                     <h2 class="visually-hidden">Наши сервисы</h2>
-                    <input class="services-slider__input  visually-hidden" id="services-control-1" type="radio" name="services-control" checked>
-                    <input class="services-slider__input  visually-hidden" id="services-control-2" type="radio" name="services-control">
-                    <input class="services-slider__input  visually-hidden" id="services-control-3" type="radio" name="services-control">
-
                     <div class="services-slider__item  services-slider__item--active  services-slider__item--delivery">
                         <h3>Доставка</h3>
                         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -216,43 +232,45 @@
                         <h3>Кредит</h3>
                         <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
                     </div>
-
-                    <div class="services-slider__controls">
-                        <label class="services-slider__control  services-slider__control--active" for="services-control-1">Доставка</label>
-                        <label class="services-slider__control" for="services-control-2">Гарантия</label>
-                        <label class="services-slider__control" for="services-control-3">Кредит</label>
+                    <div>
+                        <h2>Дополнительные услуги</h2>
+                        <button>Доставка</button>
+                        <button>Гарантия</button>
+                        <button>Кредит</button>
                     </div>
                 </div>
             </div>
         </section>
-
         <div class="container">
-            <section class="main-brands">
-                <h2 class="visually-hidden">Популярные бренды</h2>
-                <ul class="main-brands__list">
-                    <li class="main-brands__item">
-                        <a class="main-brands__link  main-brands__link--dji" href="#">
-                            <span class="visually-hidden">DJI</span>
+            <section class="brands">
+                <h2 class="visually-hidden">Производители гаджетов</h2>
+                <ul class="brand-list">
+                    <li class="brand-item">
+                        <a href="#">
+                            <img class="brand-item-active" src="img/brand-item-dji-alpha.png" width="260" height="100" alt="DJI">
+                            <img class="brand-item-inactive" src="img/brand-item-dji.png" width="260" height="100" alt="DJI" aria-hidden="true">
                         </a>
                     </li>
-                    <li class="main-brands__item">
-                        <a class="main-brands__link  main-brands__link--spg" href="#">
-                            <span class="visually-hidden">SP Gadgets</span>
+                    <li class="brand-item">
+                        <a href="#">
+                            <img class="brand-item-active" src="img/brand-item-spgadget-alpha.png" width="260" height="100" alt="SPGagets">
+                            <img class="brand-item-inactive" src="img/brand-item-spgadget.png" width="260" height="100" alt="SPGagets" aria-hidden="true">
                         </a>
                     </li>
-                    <li class="main-brands__item">
-                        <a class="main-brands__link  main-brands__link--gopro" href="#">
-                            <span class="visually-hidden">GoPro</span>
+                    <li class="brand-item">
+                        <a href="#">
+                            <img class="brand-item-active" src="img/brand-item-gopro-alpha.png" width="260" height="100" alt="GoPro">
+                            <img class="brand-item-inactive" src="img/brand-item-gopro.png" width="260" height="100" alt="GoPro" aria-hidden="true">
                         </a>
                     </li>
-                    <li class="main-brands__item">
-                        <a class="main-brands__link  main-brands__link--vive" href="#">
-                            <span class="visually-hidden">Vive</span>
+                    <li class="brand-item">
+                        <a href="#">
+                            <img class="brand-item-active" src="img/brand-item-vive-alpha.png" width="260" height="100" alt="Vive">
+                            <img class="brand-item-inactive" src="img/brand-item-vive.png" width="260" height="100" alt="Vive" aria-hidden="true">
                         </a>
                     </li>
                 </ul>
             </section>
-
             <section class="main-info-wrap">
                 <h2 class="visually-hidden">Информация о "DEVICE"</h2>
                 <article class="main-info">
@@ -268,7 +286,6 @@
                     </ul>
                     <a class="btn" href="#">Подробнее о нас</a>
                 </article>
-
                 <section class="main-contacts">
                     <h3>Контакты</h3>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
@@ -280,7 +297,6 @@
             </section>
         </div>
     </main>
-
     <footer class="page-footer">
         <div class="container">
             <div class="page-footer__user-panel">
@@ -338,7 +354,6 @@
             </div>
         </div>
     </footer>
-
     <section class="popup-write-us">
         <h2 class="visually-hidden">Форма для обратной связи</h2>
         <div class="popup-write-us__wrap">
