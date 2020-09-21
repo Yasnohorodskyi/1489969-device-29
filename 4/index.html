@@ -12,7 +12,7 @@
 
 <body>
     <header class="page-header">
-        <div class="container">
+        <div class="container header-container">
             <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
             <div class="page-header__logo">
                 <a><img src="img/" alt="DEVICE" width="150" height="100"></a>
@@ -325,18 +325,17 @@
                     </li>
                 </ul>
             </div>
+            <section>
+                <p class="footer-address">г. Москва, ул. Строителей, 15</p>
 
-            <p class="footer-address">г. Москва, ул. Строителей, 15</p>
-
-            <div class="page-footer__services">
-                <a class="page-footer__services-link  page-footer__services-link--delivery" href="#">Доставка</a>
-                <a class="page-footer__services-link  page-footer__services-link--warranty" href="#">Гарантия</a>
-                <a class="page-footer__services-link  page-footer__services-link--contacts" href="#">Контакты</a>
-            </div>
-            <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
-        </div>
-        <div class="page-footer__links">
-            <div class="page-footer__links-wrap">
+                <div class="page-footer__services">
+                    <a class="page-footer__services-link  page-footer__services-link--delivery" href="#">Доставка</a>
+                    <a class="page-footer__services-link  page-footer__services-link--warranty" href="#">Гарантия</a>
+                    <a class="page-footer__services-link  page-footer__services-link--contacts" href="#">Контакты</a>
+                </div>
+            </section>
+            <section>
+                <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
                 <ul class="page-footer__social-list">
                     <li class="page-footer__social-item">
                         <a class="page-footer__social-link  page-footer__social-link--fb" href="#">
@@ -354,47 +353,52 @@
                         </a>
                     </li>
                 </ul>
-                <p class="page-footer__copyright">
-                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/" alt="HTML Academy" width="27" height="35"></a>
-                </p>
+            </section>
+            <p class="page-footer__copyright">
+                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/" alt="HTML Academy" width="27" height="35"></a>
+            </p>
+        </div>
+
+        <section class="popup-write-us">
+            <h2 class="visually-hidden">Форма для обратной связи</h2>
+            <div class="popup-write-us__wrap">
+                <form class="popup-form" method="post" action="https://echo.htmlacademy.ru">
+                    <div class="popup-input-wrap  popup-input-wrap--name">
+                        <label for="user-name">Ваше имя:</label>
+                        <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+                    </div>
+                    <div class="popup-input-wrap  popup-input-wrap--email">
+                        <label for="user-email">Ваш e-mail:</label>
+                        <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+                    </div>
+                    <div class="popup-input-wrap  popup-input-wrap--message">
+                        <label for="user-message">Текст письма:</label>
+                        <textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
+                    </div>
+                    <button class="btn" type="submit">Отправить</button>
+                </form>
+                <button class="popup-write-us__close" type="button">
+                    <span class="visually-hidden">Закрыть</span>
+                </button>
             </div>
-        </div>
+        </section>
 
+        <p>
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+        </p>
     </footer>
-    <section class="popup-write-us">
-        <h2 class="visually-hidden">Форма для обратной связи</h2>
-        <div class="popup-write-us__wrap">
-            <form class="popup-form" method="post" action="https://echo.htmlacademy.ru">
-                <div class="popup-input-wrap  popup-input-wrap--name">
-                    <label for="user-name">Ваше имя:</label>
-                    <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
-                </div>
-                <div class="popup-input-wrap  popup-input-wrap--email">
-                    <label for="user-email">Ваш e-mail:</label>
-                    <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
-                </div>
-                <div class="popup-input-wrap  popup-input-wrap--message">
-                    <label for="user-message">Текст письма:</label>
-                    <textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
-                </div>
-                <button class="btn" type="submit">Отправить</button>
-            </form>
-            <button class="popup-write-us__close" type="button">
-                <span class="visually-hidden">Закрыть</span>
-            </button>
-        </div>
+
+    <section>
+        <h2>Личный кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <button type="button">Закрыть</button>
     </section>
 
-    <section class="popup-map">
-
-        <div class="popup-map__wrap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112436988893!2d37.52821835204128!3d55.687032925863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522064816436" width="360" height="260" style="border:0" allowfullscreen></iframe>
-            <button class="popup-map__close" type="button">
-                <span class="visually-hidden">Закрыть</span>
-            </button>
-        </div>
+    <section>
+        <h2>Как до вас добраться</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <button type="button">Закрыть</button>
     </section>
-    <script src="js/script.min.js"></script>
 </body>
 
 </html>
