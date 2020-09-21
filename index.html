@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -224,8 +224,6 @@
                 </ul>
             </section>
         </div>
-
-
         <section class="services-slider">
             <div class="container">
                 <div class="services-slider-wrap">
@@ -306,7 +304,7 @@
         </div>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer main-footer">
         <div class="container">
             <div class="page-footer__user-panel">
                 <div class="page-footer__logo">
@@ -325,16 +323,19 @@
                 </ul>
             </div>
             <section>
+                <h2>Как нас найти</h2>
                 <p class="footer-address">г. Москва, ул. Строителей, 15</p>
 
                 <div class="page-footer__services">
                     <a class="page-footer__services-link  page-footer__services-link--delivery" href="#">Доставка</a>
                     <a class="page-footer__services-link  page-footer__services-link--warranty" href="#">Гарантия</a>
                     <a class="page-footer__services-link  page-footer__services-link--contacts" href="#">Контакты</a>
+                    <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
                 </div>
             </section>
-            <section>
-                <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
+            <section class="footer-social">
+
+                <h2>Давайте дружить!</h2>
                 <ul class="page-footer__social-list">
                     <li class="page-footer__social-item">
                         <a class="page-footer__social-link  page-footer__social-link--fb" href="#">
@@ -353,15 +354,14 @@
                     </li>
                 </ul>
             </section>
-            <p class="page-footer__copyright">
-                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/" alt="HTML Academy" width="27" height="35"></a>
-            </p>
         </div>
-
+        <p class="page-footer__copyright">
+            <a class="button" href="https://htmlacademy.ru"><img src="img/" alt="HTML Academy" width="27" height="35"></a>
+        </p>
         <section class="popup-write-us">
             <h2 class="visually-hidden">Форма для обратной связи</h2>
             <div class="popup-write-us__wrap">
-                <form class="popup-form" method="post" action="https://echo.htmlacademy.ru">
+                <form class="popup-form" method="post">
                     <div class="popup-input-wrap  popup-input-wrap--name">
                         <label for="user-name">Ваше имя:</label>
                         <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
@@ -381,10 +381,6 @@
                 </button>
             </div>
         </section>
-
-        <p>
-            <a href="https://htmlacademy.ru">HTML Academy</a>
-        </p>
     </footer>
 
     <section>
