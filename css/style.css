@@ -10,18 +10,6 @@ font-style:normal;
 src:url(../fonts/gilroylight.woff2) format("woff2"),url(../fonts/gilroylight.woff) format("woff")
 }
 
-:root {
-  --basic-black: #000000;
-  --basic-dark: #363636;
-  --basic-white: #FFFFFF;
-  --basic-grey: #3A3A3A;
-  --basic-half-grey: #DCDCDC;
-  --basic-grey-light: #E5E5E5;
-  --special-yellow: #F7E296;
-  --special-green: #91C992;
-  --special-yellow-dark: #F0C52E;  
-}
-
 .visually-hidden {
   position: absolute;
 
@@ -46,6 +34,17 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+--basic-black: #000000;
+--basic-dark: #363636;
+--basic-white: #FFFFFF;
+--basic-grey: #3A3A3A;
+--basic-half-grey: #DCDCDC;
+--basic-grey-light: #E5E5E5;
+--special-yellow: #F7E296;
+--special-green: #91C992;
+--special-yellow-dark: #F0C52E;  
+}
 body {
   min-width: 1200px;
   margin: 0;
