@@ -20,6 +20,7 @@
             <nav class="main-nav">
                 <ul class="main-nav__user-list">
                     <li class="main-nav__user-item  main-nav__user-item--search">
+                        
                         <form class="main-nav__search" method="get" action="https://echo.htmlacademy.ru">
                             <input class="main-nav__search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
                             <button class="main-nav__search-btn" type="submit">Найти</button>
@@ -27,6 +28,7 @@
                                 <span class="visually-hidden">Поиск:</span>
                             </label>
                         </form>
+                        
                     </li>
                     <li class="main-nav__user-item  main-nav__user-item--login">
                         <a class="main-nav__user-link  main-nav__user-link--login" href="#">Войти</a>
@@ -86,25 +88,19 @@
                         <div class="promo-slider__advantages  promo-slider__advantages--1">
                             <table>
                                 <tr>
-                                    <th>
-                                        <div class="promo-slider__advantages-col  promo-slider__advantages-col--first">8,5 м</div>
+                                    <th>8,5 м
                                     </th>
-                                    <th>
-                                        <div class="promo-slider__advantages-col  promo-slider__advantages-col--second">5 кг</div>
+                                    <th>5 кг
                                     </th>
-                                    <th>
-                                        <div class="promo-slider__advantages-col  promo-slider__advantages-col--third">Карбон</div>
+                                    <th>Карбон
                                     </th>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--first">Длина палки</div>
+                                    <td>Длина палки
                                     </td>
-                                    <td>
-                                        <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--second">Вес палки</div>
+                                    <td>Вес палки
                                     </td>
-                                    <td>
-                                        <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--third">Материал</div>
+                                    <td>Материал
                                     </td>
                                 </tr>
                             </table>
@@ -122,13 +118,11 @@
                         <div class="promo-slider__advantages  promo-slider__advantages--2">
                             <table>
                                 <tr>
-                                    <th>
-                                        <div class="promo-slider__advantages-col  promo-slider__advantages-col--first">48 часов</div>
+                                    <th>48 часов
                                     </th>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--first">Без подзарядки</div>
+                                    <td>Без подзарядки
                                     </td>
                                 </tr>
                             </table>
@@ -146,19 +140,15 @@
                         <div class="promo-slider__advantages  promo-slider__advantages--3">
                             <table>
                                 <tr>
-                                    <th>
-                                        <div class="promo-slider__advantages-col  promo-slider__advantages-col--first">800 м</div>
+                                    <th>800 м
                                     </th>
-                                    <th>
-                                        <div class="promo-slider__advantages-col  promo-slider__advantages-col--second">50 м</div>
+                                    <th>50 м
                                     </th>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--first">Дальность полета</div>
+                                    <td>Дальность полета
                                     </td>
-                                    <td>
-                                        <div class="promo-slider__advantages-descr  promo-slider__advantages-descr--second">Радиус поражения</div>
+                                    <td>Радиус поражения
                                     </td>
                                 </tr>
                             </table>
@@ -309,7 +299,7 @@
         <div class="container">
             <div class="page-footer__user-panel">
                 <div class="page-footer__logo">
-                    <a><img src="img/.png" alt="DEVICE" width="150" height="100"></a>
+                    <a href="index.html"><img src="img/.png" alt="DEVICE" width="150" height="100"></a>
                 </div>
                 <ul class="page-footer__user-list">
                     <li class="page-footer__user-item  page-footer__user-item--login">
@@ -326,16 +316,17 @@
             <section>
                 <h2>Как нас найти</h2>
                 <p class="footer-address">г. Москва, ул. Строителей, 15</p>
-
-                <div class="page-footer__services">
-                    <a class="page-footer__services-link  page-footer__services-link--delivery" href="#">Доставка</a>
-                    <a class="page-footer__services-link  page-footer__services-link--warranty" href="#">Гарантия</a>
-                    <a class="page-footer__services-link  page-footer__services-link--contacts" href="#">Контакты</a>
-                    <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
+                <div>
+                    <ul>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
                 </div>
+                <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
             </section>
-            <section class="footer-social">
 
+            <section class="footer-social">
                 <h2>Давайте дружить!</h2>
                 <ul class="page-footer__social-list">
                     <li class="page-footer__social-item">
@@ -359,30 +350,31 @@
         <p class="page-footer__copyright">
             <a class="button" href="https://htmlacademy.ru"><img src="img/" alt="HTML Academy" width="27" height="35"></a>
         </p>
-        <section class="popup-write-us">
-            <h2 class="visually-hidden">Форма для обратной связи</h2>
-            <div class="popup-write-us__wrap">
-                <form class="popup-form" method="post">
-                    <div class="popup-input-wrap  popup-input-wrap--name">
-                        <label for="user-name">Ваше имя:</label>
-                        <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
-                    </div>
-                    <div class="popup-input-wrap  popup-input-wrap--email">
-                        <label for="user-email">Ваш e-mail:</label>
-                        <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
-                    </div>
-                    <div class="popup-input-wrap  popup-input-wrap--message">
-                        <label for="user-message">Текст письма:</label>
-                        <textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
-                    </div>
-                    <button class="btn" type="submit">Отправить</button>
-                </form>
-                <button class="popup-write-us__close" type="button">
-                    <span class="visually-hidden">Закрыть</span>
-                </button>
-            </div>
-        </section>
     </footer>
+
+    <section class="popup-write-us">
+        <h2 class="visually-hidden">Форма для обратной связи</h2>
+        <div class="popup-write-us__wrap">
+            <form class="popup-form" method="post">
+                <div class="popup-input-wrap  popup-input-wrap--name">
+                    <label for="user-name">Ваше имя:</label>
+                    <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+                </div>
+                <div class="popup-input-wrap  popup-input-wrap--email">
+                    <label for="user-email">Ваш e-mail:</label>
+                    <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+                </div>
+                <div class="popup-input-wrap  popup-input-wrap--message">
+                    <label for="user-message">Текст письма:</label>
+                    <textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
+                </div>
+                <button class="btn" type="submit">Отправить</button>
+            </form>
+            <button class="popup-write-us__close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+        </div>
+    </section>
 
     <section>
         <h2>Личный кабинет</h2>
