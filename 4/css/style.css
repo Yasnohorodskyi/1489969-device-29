@@ -88,6 +88,7 @@ a {
   width: 1160px;
   margin: 0 auto;
   padding: 0 40px; 
+  padding: 0 40px;   
 }
 
 .header-container{
@@ -128,7 +129,7 @@ background-color: var(--special-yellow);
   width: inherit;
   height: 8px;
   margin-top: -5px;
-  background-color: #F0C52E;
+  background-color: var(--special-yellow-dark);
 }
 
 .btn:hover::before,
@@ -1078,8 +1079,7 @@ background-color: var(--special-yellow);
   height: 40px;
   margin: 0;
   transition: all 0.3s linear;
-}
-  color: #F7E184;
+  color: var(--soft-yellow);
   background-color: var(--basic-black);
   transition: all 0.3s linear;
 }
