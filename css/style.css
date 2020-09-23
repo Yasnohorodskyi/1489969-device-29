@@ -50,6 +50,7 @@ html {
 --white70: rgba(255, 255, 255, 0.7);
 --black80: rgba(0, 0, 0, 0.8);   
 --black20: rgba(0, 0, 0, 0.2);
+--black30: rgba(0, 0, 0, 0.3);   
 --black10: rgba(0, 0, 0, 0.1); 
 --very-dark-gray-mostly-black: #212121; 
 --bright-yellow: rgba(240,197,46,0.5);
@@ -85,10 +86,9 @@ a {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 40px; 
-  padding: 0 40px;   
+  padding: 0 20px; 
 }
 
 .header-container{
