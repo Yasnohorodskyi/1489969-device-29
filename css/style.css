@@ -1402,7 +1402,6 @@ background-color: var(--special-yellow);
 .page-footer__user-link--compare::before {
   bottom: 2px;
   left: -20px;
-
   background-image: url("../img/yellow-compare.svg");
 }
 
@@ -1850,7 +1849,6 @@ background-color: var(--special-yellow);
 .page-content__title {
   margin: 0;
   padding-bottom: 20px;
-
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
@@ -1869,7 +1867,6 @@ background-color: var(--special-yellow);
 
 .breadcrumbs__item {
   position: relative;
-
   padding-right: 37px;
 }
 
