@@ -44,7 +44,8 @@ html {
 --special-yellow-dark: #F0C52E;
 --grey-amber: #B8A974; 
 --soft-yellow: #F7E184;
---pure-or-mostly-pure-yellow: #FFC600;  
+--pure-or-mostly-pure-yellow: #FFC600; 
+--white03:rgba(255, 255, 255, 0.3)
 --white30: rgba(0, 0, 0, 0.3); 
 --white60: rgba(0, 0, 0, 0.6); 
 --white70: rgba(255, 255, 255, 0.7);
@@ -68,6 +69,7 @@ html {
 --strong-green: #91C92F;
 --gray: #ABABAB;
 }
+
 body {
   min-width: 1200px;
   margin: 0;
@@ -79,10 +81,16 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  background-position: top center;  
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -98,14 +106,12 @@ background-color: var(--special-yellow);
 .btn {
   position: relative;
   z-index: 1;
-
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
-
   font-weight: 800;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 22px;
   font-family: "Gilroy", "Arial", sans-serif;
   text-align: center;
   color: var(--basic-black);
@@ -180,6 +186,11 @@ background-color: var(--special-yellow);
 .page-header__logo img {
   width: 164px;
   height: 36px;
+}
+
+.page-title {
+  font-size: 47px;
+  line-height: 58px;
 }
 
 .main-nav {
@@ -363,7 +374,7 @@ background-color: var(--special-yellow);
 }
 
 .main-nav__search-btn:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--white03);
 }
 
 .main-nav__search-btn:focus ~ .main-nav__search-label::before {
@@ -433,7 +444,7 @@ background-color: var(--special-yellow);
 }
 
 .main-nav__user-link--logout:active {
-  color: rgba(0, 0, 0, 0.1);
+  color: var(--black10);
 }
 
 .main-nav__list {
@@ -1272,6 +1283,138 @@ background-color: var(--special-yellow);
   margin-top: 59px;
   margin-left: 3px;
 }
+
+
+
+
+
+
+
+
+.page-title {
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.catalog-tittle{
+  font-size: 16px;
+  line-height: 20px;
+  background-color: var(--basic-grey-light); 
+}
+
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: var(--basic-black);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: var(--basic-black);
+}
+
+
+
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--basic-black);
+}
+
+
+
+.filters-catalog{
+ background-color: var(--basic-half-grey);   
+}
+
+.catalog-sortirovka {
+  background-color: var(--very-light-gray);
+}
+
+.product {
+  background-color: var(--gray70);
+  
+}
+
+.catalog-item a {
+  color: var(--basic-black);
+}
+
+.catalog-item h3 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-category {
+  text-transform: none;
+}
+
+.catalog-item-price b {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  background-color: var(--basic-neutral);
+}
+
+.catalog-item-price .button {
+  line-height: 20px;
+  color: var(--basic-white);
+}
+
+
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: var(--basic-white);
+  background-color: var(--basic-black);
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: var(--special);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: var(--basic-black);
+  background-color: var(--basic-dark);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .page-footer {
   padding-top: 63px;
