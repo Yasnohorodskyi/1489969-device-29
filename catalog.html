@@ -42,12 +42,12 @@
                         <a class="main-nav__link  main-nav__link--catalog">Каталог товаров</a>
                         <div class="main-nav__sub-wrap">
                             <ul class="main-nav__sub-list">
-                                <li class="main-nav__sub-item  main-nav__sub-item--vr"><a href="catalog.html">Виртуальная реальность</a></li>
-                                <li class="main-nav__sub-item  main-nav__sub-item--fit"><a href="catalog.html">Фитнес-браслеты</a></li>
-                                <li class="main-nav__sub-item  main-nav__sub-item--copter"><a href="catalog.html">Квадрокоптеры</a></li>
-                                <li class="main-nav__sub-item  main-nav__sub-item--selfie"><a href="catalog.html">Моноподы для селфи</a></li>
-                                <li class="main-nav__sub-item  main-nav__sub-item--watch"><a href="catalog.html">Умные часы</a></li>
-                                <li class="main-nav__sub-item  main-nav__sub-item--cam"><a href="catalog.html">Экшн-камеры</a></li>
+                                <li class="main-nav__sub-item  main-nav__sub-item--vr"><a href="#">Виртуальная реальность</a></li>
+                                <li class="main-nav__sub-item  main-nav__sub-item--fit"><a href="#">Фитнес-браслеты</a></li>
+                                <li class="main-nav__sub-item  main-nav__sub-item--copter"><a href="#">Квадрокоптеры</a></li>
+                                <li class="main-nav__sub-item  main-nav__sub-item--selfie"><a href="#">Моноподы для селфи</a></li>
+                                <li class="main-nav__sub-item  main-nav__sub-item--watch"><a href="#">Умные часы</a></li>
+                                <li class="main-nav__sub-item  main-nav__sub-item--cam"><a href="#">Экшн-камеры</a></li>
                             </ul>
                         </div>
                     </li>
@@ -87,9 +87,8 @@
         </div>
 
         <div class="container">
-            <section class="catalog-title">
-                <div class="text-transformation">
-                <h3 class="filters-catalog">Фильтр:</h3>
+            <section class="catalog-filter">
+                <h3 class="filters-catalog-title">Фильтр:</h3>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
                         <legend>Стоимость</legend>
@@ -141,7 +140,6 @@
                     </fieldset>
                     <button class="btn" type="submit">Показать</button>
                 </form>
-                </div>
             </section>
         </div>
 
@@ -149,9 +147,7 @@
             <section class="goods">
                 <h2 class="visually-hidden">Наши товары</h2>
                 <section class="catalog-sort">
-                    
-                    <div class="text-transformation">
-                    <h3 class="catalog-title">Сортировка:</h3>
+                    <h3 class="filters-catalog">Сортировка:</h3>
                     <ul class="goods__sort-list">
                         <li class="goods__sort-item  goods__sort-item--active"><a href="#">По цене</a></li>
                         <li class="goods__sort-item"><a href="#">По типу</a></li>
@@ -165,7 +161,7 @@
                             <a class="goods__sort-down-link" href="#">По убыванию</a>
                         </li>
                     </ul>
-                    </div>
+
                 </section>
 
                 <section class="goods__list">
@@ -178,7 +174,7 @@
                                 <a class="goods-item__add" href="#">Добавить к сравнению</a>
                             </div>
                             <div class="goods-item__info">
-                                <a href="#">Любительская селфи-палка</a>
+                                <h2><a href="#">Любительская селфи-палка</a></h2>
                                 <span class="goods-item__price">500 руб.</span>
                             </div>
                         </li>
@@ -190,7 +186,7 @@
                                 <a class="goods-item__add" href="#">Добавить к сравнению</a>
                             </div>
                             <div class="goods-item__info">
-                                <a href="#">Профессиональная селфи-палка</a>
+                                <h2><a href="#">Профессиональная селфи-палка</a></h2>
                                 <span class="goods-item__price">1500 руб.</span>
                             </div>
                         </li>
@@ -202,7 +198,7 @@
                                 <a class="goods-item__add" href="#">Добавить к сравнению</a>
                             </div>
                             <div class="goods-item__info">
-                                <a href="#">Непотопляемая селфи-палка</a>
+                                <h2><a href="#">Непотопляемая селфи-палка</a></h2>
                                 <span class="goods-item__price">2500 руб.</span>
                             </div>
                         </li>
@@ -214,7 +210,7 @@
                                 <a class="goods-item__add" href="#">Добавить к сравнению</a>
                             </div>
                             <div class="goods-item__info">
-                                <a href="#">Селфи-палка «Следуй за мной»</a>
+                                <h2><a href="#">Селфи-палка «Следуй за мной»</a></h2>
                                 <span class="goods-item__price">4900 руб.</span>
                             </div>
                         </li>
@@ -265,7 +261,7 @@
                     </ul>
                 </div>
                 <div class="page-footer__info">
-                    <p >
+                    <p>
                         Адрес: г. Москва, ул. Строителей, 15
                     </p>
                     <div class="page-footer__services">

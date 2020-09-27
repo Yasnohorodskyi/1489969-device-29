@@ -146,18 +146,21 @@ a {
   line-height: 58px;
 }
 
-.catalog-title{
+.catalog-filter{
   font-size: 16px;
   line-height: 20px;
   background-color: var(--basic-grey-light); 
 }
 
 .filters-catalog{
- background-color: var(--basic-half-grey);   
+ background-color: var(--basic-grey-light);
+ text-transform: uppercase; 
 }
-.text-transformation h3{
-text-transform: uppercase;
-}
+
+.filters-catalog-title{
+ background-color: var(--basic-half-grey);              
+}   
+
 
 .catalog-sort {
   background-color: var(--very-light-gray);
