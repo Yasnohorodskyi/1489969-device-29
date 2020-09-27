@@ -10,25 +10,24 @@
 </head>
 
 <body>
+
     <header class="page-header">
-        <div class="container header-container">
-            <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
+        <div class="container">
+            <h1 class="visually-hidden">Каталог товаров интернет-магазина гаджетов "DEVICE"</h1>
             <div class="page-header__logo">
-                <a><img src="img/" alt="DEVICE" width="150" height="100"></a>
+                <img src="img/black-logo-device.svg" alt="DEVICE" width="164" height="36">
             </div>
             <nav class="main-nav">
                 <ul class="main-nav__user-list">
                     <li class="main-nav__user-item  main-nav__user-item--search">
                         <form class="main-nav__search" method="get" action="https://echo.htmlacademy.ru">
                             <input class="main-nav__search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+                            <label class="main-nav__search-label" for="search">Поиск:</label>
                             <button class="main-nav__search-btn" type="submit">Найти</button>
-                            <label class="main-nav__search-label" for="search">
-                                <span class="visually-hidden">Поиск:</span>
-                            </label>
                         </form>
                     </li>
                     <li class="main-nav__user-item  main-nav__user-item--login">
-                        <a class="main-nav__user-link  main-nav__user-link--login" href="#">Войти</a>
+                        <a class="main-nav__user-link  main-nav__user-link--logout" href="#">Войти</a>
                     </li>
                     <li class="main-nav__user-item  main-nav__user-item--compare">
                         <a class="main-nav__user-link  main-nav__user-link--compare" href="#">Сравнить</a>
@@ -39,21 +38,15 @@
                 </ul>
                 <ul class="main-nav__list">
                     <li class="main-nav__item  main-nav__item--catalog">
-                        <a class="main-nav__link  main-nav__link--catalog" href="#">Каталог товаров</a>
+                        <a class="main-nav__link  main-nav__link--catalog">Каталог товаров</a>
                         <div class="main-nav__sub-wrap">
                             <ul class="main-nav__sub-list">
-                                <li class="main-nav__sub-column">
-                                    <a href="catalog.html">Виртуальная реальность</a>
-                                    <a href="catalog.html">Моноподы для селфи</a>
-                                    <a href="catalog.html">Экшн-камеры</a>
-                                </li>
-                                <li class="main-nav__sub-column">
-                                    <a href="catalog.html">Фитнес-браслеты</a>
-                                    <a href="catalog.html">Умные часы</a>
-                                </li>
-                                <li class="main-nav__sub-column">
-                                    <a href="catalog.html">Квадрокоптеры</a>
-                                </li>
+                                <li class="main-nav__sub-item  main-nav__sub-item--vr"><a href="#">Виртуальная реальность</a></li>
+                                <li class="main-nav__sub-item  main-nav__sub-item--fit"><a href="#">Фитнес-браслеты</a></li>
+                                <li class="main-nav__sub-item  main-nav__sub-item--copter"><a href="#">Квадрокоптеры</a></li>
+                                <li class="main-nav__sub-item  main-nav__sub-item--selfie"><a>Моноподы для селфи</a></li>
+                                <li class="main-nav__sub-item  main-nav__sub-item--watch"><a href="#">Умные часы</a></li>
+                                <li class="main-nav__sub-item  main-nav__sub-item--cam"><a href="#">Экшн-камеры</a></li>
                             </ul>
                         </div>
                     </li>
@@ -77,7 +70,7 @@
                 <h2 class="visually-hidden">Промо-слайдер</h2>
                 <div class="promo-slider__item  promo-slider__item--1">
                     <div class="promo-slider__img-wrap  promo-slider__img-wrap--01">
-                        <img src="img/" alt="Самая длинная палка для селфи" width="384" height="486">
+                        <img src="img/slider1.png" alt="Самая длинная палка для селфи" width="384" height="486">
                     </div>
                     <div class="promo-slider__descr-wrap  promo-slider__descr-wrap--1">
                         <b>Делай селфи,<br>как Бен Стиллер!</b>
@@ -94,6 +87,7 @@
                                     </th>
                                 </tr>
                                 <tr>
+
                                     <td>Длина палки
                                     </td>
                                     <td>Вес палки
@@ -105,9 +99,10 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <div class="promo-slider__item  promo-slider__item--2">
                     <div class="promo-slider__img-wrap  promo-slider__img-wrap--02">
-                        <img src="img/" alt="Фитнес-браслет" width="345" height="485">
+                        <img src="img/slider2.png" alt="Фитнес-браслет" width="345" height="485">
                     </div>
                     <div class="promo-slider__descr-wrap  promo-slider__descr-wrap--2">
                         <b>Худеем<br>правильно!</b>
@@ -127,9 +122,10 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <div class="promo-slider__item  promo-slider__item--3">
                     <div class="promo-slider__img-wrap  promo-slider__img-wrap--03">
-                        <img src="img/" alt="Квадрокоптер" width="526" height="334">
+                        <img src="img/slider3.png" alt="Квадрокоптер" width="526" height="334">
                     </div>
                     <div class="promo-slider__descr-wrap  promo-slider__descr-wrap--3">
                         <b>Порхает как бабочка, жалит как пчела!</b>
@@ -214,6 +210,7 @@
                 </ul>
             </section>
         </div>
+
         <section class="services-slider">
             <div class="container">
                 <div class="services-slider-wrap">
@@ -280,15 +277,16 @@
                         <li>Автотрейдинг</li>
                         <li>ЖелДорЭкспедиция</li>
                     </ul>
-                    <a href="#">Подробнее о нас</a>
+                    <a class="button" href="#">Подробнее о нас</a>
                 </section>
+
                 <section>
                     <h2>Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                     <a href="#">
-                        <img class="map-preview" src="img/map-small.jpg" width="560" height="220" alt="Место нахождения офиса на карте. Адрес: г. Москва, улица Строителей, 15">
+                        <img class="map-preview" src="img/map-small.jpg" width="560" height="220" alt="Место нахождения офиса на карте. Адрес: г. Москва, улица Строителей, 15"><br>
                     </a>
-                    <a href="#">Напишите нам</a>
+                    <a class="button" href="#">Напишите нам</a>
                 </section>
             </div>
         </div>
@@ -296,53 +294,53 @@
 
     <footer class="page-footer">
         <div class="container">
-            <div class="page-footer__user-panel">
-                <div class="page-footer__logo">
-                    <a href="index.html"><img src="img/yellow-logo-device.svg" alt="DEVICE" width="164" height="36"></a>
-                </div>
-                <ul class="page-footer__user-list">
-                    <li class="page-footer__user-item  page-footer__user-item--login">
-                        <a class="page-footer__user-link  page-footer__user-link--logout" href="#">Войти</a>
-                    </li>
-                    <li class="page-footer__user-item  page-footer__user-item--compare">
-                        <a class="page-footer__user-link  page-footer__user-link--compare" href="#">Сравнить</a>
-                    </li>
-                    <li class="page-footer__user-item  page-footer__user-item--cart">
-                        <a class="page-footer__user-link  page-footer__user-link--cart" href="#">Корзина</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="page-footer__info">
-                <p class="footer-address">г. Москва, ул. Строителей, 15</p>
-                <ul>
-                    <li><a class="page-footer__services-link  page-footer__services-link--delivery" href="#">Доставка</a></li>
-                    <li><a class="page-footer__services-link  page-footer__services-link--warranty" href="#">Гарантия</a></li>
-                    <li><a class="page-footer__services-link  page-footer__services-link--contacts" href="#">Контакты</a></li>
-                </ul>
-                <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
-            </div>
-            <div class="page-footer__links">
-                <div class="page-footer__links-wrap">
-                    <ul class="page-footer__social-list">
-                        <li class="page-footer__social-item">
-                            <a class="page-footer__social-link  page-footer__social-link--fb" href="#">
-                                <span class="visually-hidden">Facebook</span>
-                            </a>
+            <div class="container">
+                <div class="page-footer__user-panel">
+                    <div class="page-footer__logo">
+                        <a href="index.html"><img src="img/yellow-logo-device.svg" alt="DEVICE" width="164" height="36"></a>
+                    </div>
+                    <ul class="page-footer__user-list">
+                        <li class="page-footer__user-item  page-footer__user-item--login">
+                            <a class="page-footer__user-link  page-footer__user-link--logout" href="#">Войти</a>
                         </li>
-                        <li class="page-footer__social-item">
-                            <a class="page-footer__social-link  page-footer__social-link--inst" href="#">
-                                <span class="visually-hidden">Instagram</span>
-                            </a>
+                        <li class="page-footer__user-item  page-footer__user-item--compare">
+                            <a class="page-footer__user-link  page-footer__user-link--compare" href="#">Сравнить</a>
                         </li>
-                        <li class="page-footer__social-item">
-                            <a class="page-footer__social-link  page-footer__social-link--tw" href="#">
-                                <span class="visually-hidden">Twitter</span>
-                            </a>
+                        <li class="page-footer__user-item  page-footer__user-item--cart">
+                            <a class="page-footer__user-link  page-footer__user-link--cart" href="#">Корзина</a>
                         </li>
                     </ul>
+                </div>
+                <div class="page-footer__info">
                     <p>
-                        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="HTML Academy" width="27" height="35"></a>
+                        Адрес: г. Москва, ул. Строителей, 15
                     </p>
+                    <div class="page-footer__services">
+                        <a class="page-footer__services-link  page-footer__services-link--delivery" href="#">Доставка</a>
+                        <a class="page-footer__services-link  page-footer__services-link--warranty" href="#">Гарантия</a>
+                        <a class="page-footer__services-link  page-footer__services-link--contacts" href="#">Контакты</a>
+                    </div>
+                    <p>
+                        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+                    </p>
+                </div>
+                <div class="page-footer__links">
+                    <div class="page-footer__links-wrap">
+                        <ul class="page-footer__social-list">
+                            <li class="page-footer__social-item">
+                                <a href="#"><img src="img/facebook.svg" alt="Facebook" width="32" height="32"></a>
+                            </li>
+                            <li class="page-footer__social-item">
+                                <a href="#"><img src="img/instagram.svg" alt="Instagram" width="32" height="32"></a>
+                            </li>
+                            <li class="page-footer__social-item">
+                                <a href="#"><img src="img/twitter.svg" alt="Twitter" width="32" height="32"></a>
+                            </li>
+                        </ul>
+                        <div class="page-footer__copyright">
+                            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="HTML Academy" width="27" height="35"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -372,17 +370,6 @@
         </div>
     </section>
 
-    <section>
-        <h2>Личный кабинет</h2>
-        <p>Введите пожалуйста свой логин и пароль</p>
-        <button type="button">Закрыть</button>
-    </section>
-
-    <section>
-        <h2>Как до вас добраться</h2>
-        <p>Введите пожалуйста свой логин и пароль</p>
-        <button type="button">Закрыть</button>
-    </section>
 </body>
 
 </html>
