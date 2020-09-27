@@ -1,16 +1,14 @@
-@font-face {
-  font-family: 'Gilroy';
-  font-weight: 800;
-  font-style: normal;
-  src: url('fonts/gilroyextrabold.woff2') format('woff2'),
-  url('fonts/gilroyextrabold.woff') format('woff');
+@font-face{
+  font-family:"Gilroy";
+  font-style:normal;
+  src: url(../fonts/gilroyextrabold.woff2) format("woff2"),url(../fonts/gilroyextrabold.woff) format("woff");
+  font-weight:800; 
 }
-@font-face {
-  font-family: 'Gilroy';
-  font-weight: 300;
-  font-style: normal;
-  src: url('fonts/gilroylight.woff2') format('woff2'),
-  url('fonts/gilroylight.woff') format('woff');
+@font-face{
+  font-family:"Gilroy";
+  font-style:normal;
+  src: url(../fonts/gilroylight.woff2') format("woff2"),url(../fonts/gilroylight.woff) format("woff");
+   font-weight:300;  
 }
 .visually-hidden {
   position: absolute;
@@ -67,17 +65,19 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 30px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   padding-top: 40px;
-  letter-spacing: .01em;
-  color: var(--dark-gray);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  font-family: "Open Sans", "Arial", sans-serif;
+   color: var(--basic-black);
   background-color: var(--basic-white);
+  background-position: top center; 
 }
+
 a {
   text-decoration: none;
 }
@@ -146,7 +146,7 @@ a {
   line-height: 58px;
 }
 
-.catalog-tittle{
+.catalog-title{
   font-size: 16px;
   line-height: 20px;
   background-color: var(--basic-grey-light); 
@@ -155,7 +155,11 @@ a {
 .filters-catalog{
  background-color: var(--basic-half-grey);   
 }
-.catalog-sortirovka {
+.text-transformation h3{
+text-transform: uppercase;
+}
+
+.catalog-sort {
   background-color: var(--very-light-gray);
 }
 .product {
