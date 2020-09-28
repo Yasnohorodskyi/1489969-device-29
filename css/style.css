@@ -158,7 +158,8 @@ a {
 }
 
 .filters-catalog-title{
- background-color: var(--basic-half-grey);              
+ background-color: var(--basic-half-grey);
+ text-transform: uppercase   
 }   
 
 
