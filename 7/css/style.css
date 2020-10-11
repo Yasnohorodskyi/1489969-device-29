@@ -33,7 +33,7 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 :root {
@@ -154,7 +154,7 @@ a {
 .page-header {
    
     position: relative;
-    width: 1160px;
+  
     margin: 0 auto;
     color: var(--basic-black);
     background-color: var(--special-yellow);
@@ -175,8 +175,7 @@ a {
 }
 
 .page-footer {
-    display: grid;
-    grid-template-columns: 1fr min-content;  
+    
     min-height: 324px;
     margin: 0 auto;
     padding: 0 10px;
@@ -885,8 +884,7 @@ a {
 
 .main-goods {
     
-    margin: 0 auto;
-    width: 1160px;
+   
     margin-top: 96px;
     margin-bottom: 84px;
 }
@@ -1197,10 +1195,7 @@ a {
     color: var(--basic-black);
 }
 
-.brands {
-    margin: 0 auto;
-    width: 1160px;
-}
+
 
 .brand-list {
     display: grid;
