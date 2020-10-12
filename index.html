@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -7,27 +8,32 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+  <base href="https://htmlacademy-htmlcss.github.io/1489969-device-29/7/">
 </head>
 
-<body>
+<body class="page-body">
+
 
     <header class="page-header">
         <div class="container">
             <h1 class="visually-hidden">Каталог товаров интернет-магазина гаджетов "DEVICE"</h1>
             <div class="page-header__logo">
-                <a><img src="img/black-logo-device.svg" alt="DEVICE" width="164" height="36"></a>
+                <a><img src="img/black-logo-device.svg" alt="DEVICE" width="163" height="35"></a>
             </div>
+
             <nav class="main-nav">
                 <ul class="main-nav__user-list">
                     <li class="main-nav__user-item  main-nav__user-item--search">
                         <form class="main-nav__search" method="get" action="https://echo.htmlacademy.ru">
                             <input class="main-nav__search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
-                            <label class="main-nav__search-label" for="search">Поиск:</label>
                             <button class="main-nav__search-btn" type="submit">Найти</button>
+                            <label class="main-nav__search-label" for="search">
+                                <span class="visually-hidden">Поиск:</span>
+                            </label>
                         </form>
                     </li>
                     <li class="main-nav__user-item  main-nav__user-item--login">
-                        <a class="main-nav__user-link  main-nav__user-link--logout" href="#">Войти</a>
+                        <a class="main-nav__user-link  main-nav__user-link--login" href="#">Войти</a>
                     </li>
                     <li class="main-nav__user-item  main-nav__user-item--compare">
                         <a class="main-nav__user-link  main-nav__user-link--compare" href="#">Сравнить</a>
@@ -38,18 +44,25 @@
                 </ul>
                 <ul class="main-nav__list">
                     <li class="main-nav__item  main-nav__item--catalog">
-                        <a class="main-nav__link  main-nav__link--catalog" href="catalog.html"> каталог товаров</a>
+                        <a class="main-nav__link  main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
                         <div class="main-nav__sub-wrap">
                             <ul class="main-nav__sub-list">
-                                <li class="main-nav__sub-item  main-nav__sub-item--vr"><a href="#">Виртуальная реальность</a></li>
-                                <li class="main-nav__sub-item  main-nav__sub-item--fit"><a href="#">Фитнес-браслеты</a></li>
-                                <li class="main-nav__sub-item  main-nav__sub-item--copter"><a href="#">Квадрокоптеры</a></li>
-                                <li class="main-nav__sub-item  main-nav__sub-item--selfie"><a>Моноподы для селфи</a></li>
-                                <li class="main-nav__sub-item  main-nav__sub-item--watch"><a href="#">Умные часы</a></li>
-                                <li class="main-nav__sub-item  main-nav__sub-item--cam"><a href="#">Экшн-камеры</a></li>
+                                <li class="main-nav__sub-column">
+                                    <a href="#">Виртуальная реальность</a>
+                                    <a href="catalog.html">Моноподы для селфи</a>
+                                    <a href="#">Экшн-камеры</a>
+                                </li>
+                                <li class="main-nav__sub-column">
+                                    <a href="#">Фитнес-браслеты</a>
+                                    <a href="#">Умные часы</a>
+                                </li>
+                                <li class="main-nav__sub-column">
+                                    <a href="#">Квадрокоптеры</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
+
                     <li class="main-nav__item  main-nav__item--delivery">
                         <a class="main-nav__link  main-nav__link--delivery" href="#">Доставка</a>
                     </li>
@@ -184,7 +197,7 @@
                         </a>
                     </li>
                     <li class="main-goods__item">
-                        <a class="main-goods__item-link" href="#l">
+                        <a class="main-goods__item-link" href="#">
                             <div class="main-goods__item-wrap  main-goods__item-wrap--fit">
                                 <img class="main-goods__item-img" src="img/main-goods-fitness.svg" alt="Фитнес-браслет" width="107" height="65">
                             </div>
@@ -212,15 +225,14 @@
         </div>
 
         <section class="services-slider">
+            <h2 class="visually-hidden">Дополнительные услуги</h2>
             <div class="container">
                 <div class="services-slider-wrap">
-                    <div>
-                        <h2>Дополнительные услуги</h2>
+                    <div>     
                         <button type="button">Доставка</button>
                         <button type="button">Гарантия</button>
                         <button type="button">Кредит</button>
                     </div>
-                    <h2 class="visually-hidden">Наши сервисы</h2>
                     <div class="service-items">
                         <div class="service-items-wrapper">
                             <div class="service-item">
@@ -249,6 +261,7 @@
                 </div>
             </div>
         </section>
+
         <div class="container">
             <section class="brands">
                 <h2 class="visually-hidden">Производители гаджетов</h2>
@@ -279,80 +292,82 @@
                     </li>
                 </ul>
             </section>
-            <h2 class="visually-hidden">Информация о "DEVICE"</h2>
-            <div>
-                <section>
-                    <h2>О нас</h2>
-                    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-                    <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-                    <ul>
-                        <li>Деловые Линии</li>
-                        <li>Автотрейдинг</li>
-                        <li>ЖелДорЭкспедиция</li>
-                    </ul>
-                    <a class="button" href="#">Подробнее о нас</a>
-                </section>
 
-                <section>
-                    <h2>Контакты</h2>
+            <section class="main-info-wrap">
+                <h2 class="visually-hidden">Информация о "DEVICE"</h2>
+                <div class="main-info">
+                    <h3>О нас</h3>
+                    <div class="main-info__descr">
+                        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+                        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+                    </div>
+                    <ul class="main-info__delivery-list">
+                        <li class="main-info__delivery-item">Деловые Линии</li>
+                        <li class="main-info__delivery-item">Автотрейдинг</li>
+                        <li class="main-info__delivery-item">ЖелДорЭкспедиция</li>
+                    </ul>
+                    <a class="btn" href="#">Подробнее о нас</a>
+                </div>
+
+                <section class="main-contacts">
+                    <h3>Контакты</h3>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <a href="#">
-                        <img class="map-preview" src="img/main-contacts-map.jpg" width="560" height="220" alt="Место нахождения офиса на карте. Адрес: г. Москва, улица Строителей, 15"><br>
+                    <a class="main-contacts__map" href="#">
+                        <img src="img/main-contacts-map.jpg" alt="г. Москва, ул. Строителей, 15" width="560" height="222">
                     </a>
-                    <a class="button" href="#">Напишите нам</a>
+                    <a class="main-contacts__btn btn" href="#">Напишите нам</a>
                 </section>
-            </div>
+            </section>
         </div>
     </main>
 
+
     <footer class="page-footer">
         <div class="container">
-            <div class="container">
-                <div class="page-footer__user-panel">
-                    <div class="page-footer__logo">
-                        <a><img src="img/yellow-logo-device.svg" alt="DEVICE" width="164" height="36"></a>
-                    </div>
-                    <ul class="page-footer__user-list">
-                        <li class="page-footer__user-item  page-footer__user-item--login">
-                            <a class="page-footer__user-link  page-footer__user-link--logout" href="#">Войти</a>
+            <div class="page-footer__user-panel">
+                <div class="page-footer__logo">
+                    <a><img src="img/yellow-logo-device.svg" alt="DEVICE" width="164" height="36"></a>
+                </div>
+                <ul class="page-footer__user-list">
+                    <li class="page-footer__user-item  page-footer__user-item--login">
+                        <a class="page-footer__user-link  page-footer__user-link--login" href="#">Войти</a>
+                    </li>
+                    <li class="page-footer__user-item  page-footer__user-item--compare">
+                        <a class="page-footer__user-link  page-footer__user-link--compare" href="#">Сравнить</a>
+                    </li>
+                    <li class="page-footer__user-item  page-footer__user-item--cart">
+                        <a class="page-footer__user-link  page-footer__user-link--cart" href="#">Корзина</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__info">
+                <p>
+                    Адрес: г. Москва, ул. Строителей, 15
+                </p>
+                <div class="page-footer__services">
+                    <a class="page-footer__services-link  page-footer__services-link--delivery" href="#">Доставка</a>
+                    <a class="page-footer__services-link  page-footer__services-link--warranty" href="#">Гарантия</a>
+                    <a class="page-footer__services-link  page-footer__services-link--contacts" href="#">Контакты</a>
+                </div>
+                <p>
+                    <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+                </p>
+            </div>
+            <div class="page-footer__links">
+                <div class="page-footer__links-wrap">
+                    <ul class="page-footer__social-list">
+                        <li class="page-footer__social-item">
+                            <a href="#"></a>
                         </li>
-                        <li class="page-footer__user-item  page-footer__user-item--compare">
-                            <a class="page-footer__user-link  page-footer__user-link--compare" href="#">Сравнить</a>
+                        <li class="page-footer__social-item">
+                            <a href="#"></a>
                         </li>
-                        <li class="page-footer__user-item  page-footer__user-item--cart">
-                            <a class="page-footer__user-link  page-footer__user-link--cart" href="#">Корзина</a>
+                        <li class="page-footer__social-item">
+                            <a href="#"></a>
                         </li>
                     </ul>
-                </div>
-                <div class="page-footer__info">
-                    <p>
-                        Адрес: г. Москва, ул. Строителей, 15
-                    </p>
-                    <div class="page-footer__services">
-                        <a class="page-footer__services-link  page-footer__services-link--delivery" href="#">Доставка</a>
-                        <a class="page-footer__services-link  page-footer__services-link--warranty" href="#">Гарантия</a>
-                        <a class="page-footer__services-link  page-footer__services-link--contacts" href="#">Контакты</a>
-                    </div>
-                    <p>
-                        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-                    </p>
-                </div>
-                <div class="page-footer__links">
-                    <div class="page-footer__links-wrap">
-                        <ul class="page-footer__social-list">
-                            <li class="page-footer__social-item">
-                                <a href="#"></a>
-                            </li>
-                            <li class="page-footer__social-item">
-                                <a href="#"></a>
-                            </li>
-                            <li class="page-footer__social-item">
-                                <a href="#"></a>
-                            </li>
-                        </ul>
-                        <div class="page-footer__copyright">
-                            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="HTML Academy" width="27" height="35"></a>
-                        </div>
+                    <div class="page-footer__copyright">
+                        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="HTML Academy" width="27" height="35"></a>
                     </div>
                 </div>
             </div>
@@ -382,7 +397,6 @@
             </button>
         </div>
     </section>
-
 </body>
 
 </html>
