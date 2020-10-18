@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+ 
  
   <base href="https://htmlacademy-htmlcss.github.io/1489969-device-29/8/">
 </head>
@@ -75,31 +77,22 @@
         </header>
     </div>
 
-    <main class="page-content">
-        <div class="container">
-            <header class="page-content__header">
-                <h2 class="page-content__title">Моноподы для селфи</h2>
-                <nav class="breadcrumbs">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a href="index.html">Главная</a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <a href="#">Каталог товаров</a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <a>Моноподы для селфи</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-        <div class="page-content__wrap">
-            <section class="sidebar">
-                <div class="sidebar__title-wrap">
-                    <h2>Фильтр:</h2>
-                </div>
-                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+    
+    
+<main>
+  <div class="catalog-container container">
+    <h1 class="main-catalog-heading">Моноподы для селфи</h1>
+    <ul class="catalog-site-nav">
+      <li class="catalog-site-nav-item"><a class="catalog-site-nav-link" href="index.html">Главная</a></li>
+      <li class="catalog-site-nav-item"><a class="catalog-site-nav-link" href="#">Каталог товаров</a></li>
+      <li class="catalog-site-nav-item"><a class="catalog-site-nav-link" href="#">Моноподы для селфи</a></li>
+    </ul> 
+       
+         <section class="filters-section">
+            
+      <h2 class="filters-header">Фильтр:</h2>
+      <div class="filters">
+         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <div class="filter__item-wrap">
                         <fieldset class="filter__item  filter__item--price">
                             <legend>Стоимость</legend>
@@ -168,107 +161,89 @@
                     </div>
                     <button class="btn" type="submit">Показать</button>
                 </form>
-            </section>
-        </div>
-        <div class="page-content__wrap">
-            <section class="goods">
-                <h2 class="visually-hidden">Наши товары</h2>
-                <section class="goods__sort">
-                    <h3>Сортировка:</h3>
-                    <ul class="goods__sort-list">
-                        <li class="goods__sort-item  goods__sort-item--active"><a href="#">По цене</a></li>
-                        <li class="goods__sort-item"><a href="#">По типу</a></li>
-                        <li class="goods__sort-item"><a href="#">По популярности</a></li>
-                    </ul>
-                    <ul class="goods__sort-updown">
-                        <li class="goods__sort-up">
-                            <a class="goods__sort-up-link" href="#">
-                                <img src="img/sort-up.svg" alt="По возрастанию" width="11" height="10">
-                            </a>
-                        </li>
-                        <li class="goods__sort-down  goods__sort-down--active">
-                            <a class="goods__sort-down-link" href="#">
-                                <img src="img/sort-down.svg" alt="По убыванию" width="11" height="10">
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="goods__list">
-                    <article class="goods-item">
-                        <img class="goods-item__img" src="img/amateur-selfie-stick.jpg" alt="Любительская селфи-палка" width="360" height="380">
-                        <span class="goods-item__new">NEW</span>
-                        <div class="goods-item__hover">
-                            <a class="btn" href="#">В корзину</a>
-                            <a class="goods-item__add" href="#">Добавить к сравнению</a>
-                        </div>
-                        <div class="goods-item__info">
-                            <h1><a href="#">Любительская селфи-палка</a></h1>
-                            <span class="goods-item__price">500 руб.</span>
-                        </div>
-                    </article>
-                    <article class="goods-item">
-                        <img class="goods-item__img" src="img/professional-selfie-stick.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-                        <span class="goods-item__new">NEW</span>
-                        <div class="goods-item__hover">
-                            <a class="btn" href="#">В корзину</a>
-                            <a class="goods-item__add" href="#">Добавить к сравнению</a>
-                        </div>
-                        <div class="goods-item__info">
-                            <h1><a href="#">Профессиональная селфи-палка</a></h1>
-                            <span class="goods-item__price">1500 руб.</span>
-                        </div>
-                    </article>
-                    <article class="goods-item">
-                        <img class="goods-item__img" src="img/unsinkable-selfie-stick.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-                        <span class="goods-item__new">NEW</span>
-                        <div class="goods-item__hover">
-                            <a class="btn" href="#">В корзину</a>
-                            <a class="goods-item__add" href="#">Добавить к сравнению</a>
-                        </div>
-                        <div class="goods-item__info">
-                            <h1><a href="#">Непотопляемая селфи-палка</a></h1>
-                            <span class="goods-item__price">2500 руб.</span>
-                        </div>
-                    </article>
-                    <article class="goods-item">
-                        <img class="goods-item__img" src="img/follow-me-selfie-stick.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
-                        <span class="goods-item__new  goods-item__new--active">NEW</span>
-                        <div class="goods-item__hover">
-                            <a class="btn" href="#">В корзину</a>
-                            <a class="goods-item__add" href="#">Добавить к сравнению</a>
-                        </div>
-                        <div class="goods-item__info">
-                            <h1><a href="#">Селфи-палка «Следуй за мной»</a></h1>
-                            <span class="goods-item__price">4900 руб.</span>
-                        </div>
-                    </article>
-                </section>
-
-
-                <ul class="pagination">
-                    <li>
-                        <a class="pagination__control  pagination__control--prev" href="#">Назад</a>
-                    </li>
-                    <li class="pagination__list-wrap">
-                        <ul class="pagination__list">
-                            <li class="pagination__item  pagination__item--active">
-                                <a href="#">1</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#">2</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#">3</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="pagination__control  pagination__control--next" href="#">Вперед</a>
-                    </li>
-                </ul>
-            </section>
-        </div>
+      </div>
+    </section>
+    <section class="sort-section">
+      <h2 class="sort-heading">Сортировка:</h2>
+      <ul class="sort-list">
+        <li class="sort-list-item active"><a class="sort-list-link" href="#"></a>По цене</li>
+        <li class="sort-list-item"><a class="sort-list-link" href="#"></a>По типу</li>
+        <li class="sort-list-item"><a class="sort-list-link" href="#"></a>По популярности</li>
+      </ul>
+    </section>
+    <section class="goods-section">
+      
+      <h2 class="goods-header visually-hidden">Список товаров</h2>
+      <!--    Список товаров-->
+        
+      <ul class="goods-list">
+        <!--      Первый товар-->
+        <li class="goods-list-item">
+          <h3 class="visually-hidden">Любительская селфи-палка</h3>
+          <img class="goods-list-link-pic" src="img/amateur-selfie-stick.jpg" width="360" height="380"
+               alt="Профессиональная селфи-палка">
+          <a href="product.html" class="goods-list-link-heading">Любительская селфи-палка</a>
+          <span class="goods-list-price">500 руб.</span>
+          <div class="product-links">
+            <a class="product-links-item addcart" href="#">В корзину</a>
+            <a class="product-links-item addcompare" href="#">Добавить к сравнению</a>
+          </div>
+        </li>
+        <!--      Второй товар-->
+        <li class="goods-list-item">
+          <h3 class="visually-hidden">Профессиональная селфи-палка</h3>
+          <img class="goods-list-link-pic" src="img/professional-selfie-stick.jpg" width="360" height="380"
+               alt="Профессиональная селфи-палка">
+          <a href="product.html" class="goods-list-link-heading">Профессиональная<br>селфи-палка</a>
+          <span class="goods-list-price">1500 руб.</span>
+          <div class="product-links">
+            <a class="product-links-item addcart" href="#">В корзину</a>
+            <a class="product-links-item addcompare" href="#">Добавить к сравнению</a>
+          </div>
+        </li>
+        <!--      Третий товар-->
+        <li class="goods-list-item">
+          <h3 class="visually-hidden">Непотопляемая селфи-палка</h3>
+          <img class="goods-list-link-pic" src="img/unsinkable-selfie-stick.jpg" width="360" height="380"
+               alt="Профессиональная селфи-палка">
+          <a href="product.html" class="goods-list-link-heading">Непотопляемая<br>селфи-палка</a>
+          <span class="goods-list-price">2500 руб.</span>
+          <div class="product-links">
+            <a class="product-links-item addcart" href="#">В корзину</a>
+            <a class="product-links-item addcompare" href="#">Добавить к сравнению</a>
+          </div>
+        </li>
+        <!--      Четвертый товар-->
+        <li class="goods-list-item">
+          <h3 class="visually-hidden">Селфи-палка «Следуй за мной»</h3>
+          <img class="goods-list-link-pic" src="img/follow-me-selfie-stick.jpg" width="360" height="380"
+               alt="Профессиональная селфи-палка">
+          <a href="product.html" class="goods-list-link-heading">Селфи-палка «Следуй за<br>мной»</a>
+          <span class="goods-list-price">4900 руб.</span>
+          <div class="product-links">
+            <a class="product-links-item addcart" href="#">В корзину</a>
+            <a class="product-links-item addcompare" href="#">Добавить к сравнению</a>
+          </div>
+        </li>
+      </ul>
+      <!--    Пагинация-->
+      <div class="pagination">
+        <a class="pagination-back" href="#">Назад</a>
+        <ul class="pagination-list">
+          <li class="pagination-page">
+            <a class="pagination-page-link active" href="#">1</a>
+          </li>
+          <li class="pagination-page">
+            <a class="pagination-page-link" href="#">2</a>
+          </li>
+          <li class="pagination-page">
+            <a class="pagination-page-link" href="#">3</a>
+          </li>
+        </ul>
+        <a class="pagination-forward" href="#">Вперед</a>
+      </div>
+    </section>
+    </div>
     </main>
 
     <footer class="page-footer main-footer">
