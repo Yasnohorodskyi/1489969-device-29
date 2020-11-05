@@ -54,7 +54,16 @@ img {
 }
 
 body {
-
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basick-black);
+  background-color: var(--basic-white);
+  background-position: top center;
+  background: no-repeat;
+  font-family: "Gilroy", "Arial", sans-serif;
 }
 
 .page-body {
