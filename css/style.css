@@ -54,6 +54,11 @@ img {
 }
 
 body {
+
+}
+
+.page-body {
+    
   min-width: 1440px;
   margin: 0;
   padding: 0;
@@ -64,12 +69,9 @@ body {
   background-position: top center;
   background: no-repeat;
   font-family: "Gilroy", "Arial", sans-serif;
+       
+ 
 }
-
-
-
-
-
 
 .menu {
   font-size: 15px;
@@ -637,6 +639,7 @@ padding: 6px 0;
 }
 
 .main-footer {
+ 
   background-color: var(--basc-dark);
   min-height: 324px;
 }
