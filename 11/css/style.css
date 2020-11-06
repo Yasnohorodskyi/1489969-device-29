@@ -1,15 +1,37 @@
 @font-face {
-    font-family: "Gilroy";
-    font-style: normal;
-    src: url(../fonts/gilroyextrabold.woff2) format("woff2"), url(../fonts/gilroyextrabold.woff) format("woff");
-    font-weight: 800;
+  font-weight: 800;
+  font-family: "Gilroy";
+  font-style: normal;
+
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Gilroy";
-    font-style: normal;
-    src: url(../fonts/gilroylight.woff2') format("woff2"), url(../fonts/gilroylight.woff) format("woff");
-    font-weight: 300;
+  font-weight: 300;
+  font-family: "Gilroy-light";
+  font-style: normal;
+
+  src: url("../fonts/gilroylight.woff") format("woff"),
+    url("../fonts/gilroylight.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Open-sans";
+  font-style: normal;
+
+  src: url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Open-sans-light"; 
+  font-style: normal;
+
+  src: url("../fonts/opensanslight.woff") format("woff"),
+    url("../fonts/opensanslight.woff2") format("woff2");
 }
 
 :root {
