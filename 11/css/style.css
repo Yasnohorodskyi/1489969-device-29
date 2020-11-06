@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    src: url(../fonts/gilroyextrabold.woff2) format("woff2"), url(../fonts/gilroyextrabold.woff) format("woff");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    src: url(../fonts/gilroylight.woff2') format("woff2"), url(../fonts/gilroylight.woff) format("woff");
+    font-weight: 300;
+}
+
 :root {
     --basic-black: #000000;
     --basic-dark: #363636;
@@ -19,25 +33,11 @@
     --basic-perfict-white: rgba(230, 230, 230, 0.8);
     --basic-lower-shadows: rgba(0, 0, 0, 0.4);
     --basic-silver-color: #C4C4C4;
-
     --special-yellow: #F7E296;
     --special-green: #91C92F;
     --special-yellow-dark: #F0C52E;
 }
 
-@font-face {
-    font-family: "Gilroy";
-    font-style: normal;
-    src: url(../fonts/gilroyextrabold.woff2) format("woff2"), url(../fonts/gilroyextrabold.woff) format("woff");
-    font-weight: 800;
-}
-
-@font-face {
-    font-family: "Gilroy";
-    font-style: normal;
-    src: url(../fonts/gilroylight.woff2') format("woff2"), url(../fonts/gilroylight.woff) format("woff");
-    font-weight: 300;
-}
 
 a {
     text-decoration: none;
