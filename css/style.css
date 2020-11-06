@@ -54,7 +54,7 @@ img {
 }
 
 body {
-  min-width: 1440px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -67,20 +67,12 @@ body {
 }
 
 .page-body {
-    
-  min-width: 1440px;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--basick-black);
-  background-color: var(--basic-white);
-  background-position: top center;
-  background: no-repeat;
-  font-family: "Gilroy", "Arial", sans-serif;
-       
- 
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content:start;
 }
+
 
 .menu {
   font-size: 15px;
@@ -114,6 +106,8 @@ body {
 .page {
   height: 100%;
 }
+
+
 
 .navigation-list  {
   font-size: 18px;
@@ -719,7 +713,7 @@ padding: 6px 0;
 .delivery-service::before {
   content: "";
   position: absolute;
-  background-image: url(../img/Ellipse_3.svg);
+  background-image: url(../img/Ellipse1.svg);
   background-repeat: no-repeat;
   width: 8px;
   height: 8px;
@@ -1104,7 +1098,7 @@ padding: 6px 0;
 }
 
 .social-academy {
-  background-image: url(../img/academy.svg);
+  background-image: url(../img/logo-html.svg);
   display: block;
   width: 27px;
   height: 34px;
@@ -1426,7 +1420,7 @@ padding: 6px 0;
 .sort::before {
   position: absolute;
   content: "";
-  background-image: url(../img/icon-up.svg);
+  background-image: url(../img/icon-down.svg);
   width: 11px;
   height: 11px;
   background-repeat: no-repeat;
@@ -1542,7 +1536,7 @@ padding: 6px 0;
   letter-spacing: 0.1em;
   color: var(--basic-black);
   margin: 0;
-  margin-top: 36px;
+  
   position: relative;
 }
 
@@ -1871,7 +1865,7 @@ padding: 6px 0;
   background-color: var(--special-yellow);
   border: none;
   outline: none;
-  width: 230px;
+  width: 233px;
   position: relative;
   margin-left: 35px;
   opacity: 0.3;
@@ -1880,7 +1874,7 @@ padding: 6px 0;
 .search-container::before {
   position: absolute;
   content: "";
-  background-image: url(../img/Vector.svg);
+  background-image: url(../img/search.svg);
   width: 13px;
   height: 13px;
   left: 60px;
@@ -1948,7 +1942,7 @@ padding: 6px 0;
   left: -38px;
   width: 13px;
   height: 10px;
-  background-image: url(../img/checked.svg);
+  background-image: url(../img/vector.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1974,7 +1968,7 @@ padding: 6px 0;
   position: absolute;
   left: -40px;
   top: -2px;
-  background-image: url(../img/radio-input.svg);
+  background-image: url(../img/radio-on.svg);
   width: 24px;
   height: 24px;
 }
@@ -1986,7 +1980,7 @@ padding: 6px 0;
   left: -32px;
   width: 8px;
   height: 8px;
-  background-image: url(../img/radio-checked.svg);
+  background-image: url(../img/Ellipse.svg);
 }
 
 .input-button {
