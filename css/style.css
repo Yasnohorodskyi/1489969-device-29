@@ -89,6 +89,13 @@ img {
   margin: 0;
   padding: 0;
 }
+.clear-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
 .container {
   max-width: 1160px;
   margin: 0 auto;
@@ -732,25 +739,29 @@ img {
   height: 188px;
   background-image: url("../img/services/credit.svg");
 }
-/* Partners */
-.partners {
-  margin-bottom: 84px;
+/* Logotypes */
+
+.logotypes-list {
+  width: 1160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 86px;
 }
-.partners-list {
-  display: grid;
-  grid-template-columns: repeat(4, 260px);
-  gap: 40px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.partners-list img {
+
+.logotypes-item-link img {
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  opacity: 0.2;
 }
-.partners-list img:hover {
+
+.logotypes-item-link img:hover {
+  -webkit-filter: none;
   filter: none;
-  opacity: 1;
 }
 /* About us and Contacts */
 .about-us .btn,
