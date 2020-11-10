@@ -1198,8 +1198,10 @@ img {
   margin-bottom: 29px;
 }
 .main-footer-logo {
+  vertical-align: middle;   
   display: inline-block;
   align-self: flex-end;
+   
 }
 .main-footer-top .user-routes {
   align-self: flex-start;
